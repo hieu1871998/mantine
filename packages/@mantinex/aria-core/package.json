@@ -1,0 +1,29 @@
+{
+  "name": "@mantinex/aria-core",
+  "version": "0.1.0",
+  "description": "Example polymorphic components with React Aria",
+  "license": "MIT",
+  "sideEffects": false,
+  "main": "./cjs/index.cjs",
+  "module": "./esm/index.mjs",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./lib/index.d.mts",
+        "default": "./esm/index.mjs"
+      },
+      "require": {
+        "types": "./lib/index.d.ts",
+        "default": "./cjs/index.cjs"
+      }
+    }
+  },
+  "peerDependencies": {
+    "react": "^18.x || ^19.x"
+  },
+  "dependencies": {
+    "react-aria-components": "^1.10.0",
+    "tailwind-variants": "^1.0.0"
+  }
+}
